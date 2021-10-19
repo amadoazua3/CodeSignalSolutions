@@ -184,4 +184,49 @@ function centuryFromYear(year) {
 
 }
 
+// You are given a two-digit integer n. Return the sum of its digits.
+//
+// Example
+//
+// For n = 29, the output should be
+// addTwoDigits(n) = 11.
+//
+// Input/Output
+//
+// [execution time limit] 4 seconds (js)
+//
+// [input] integer n
+//
+// A positive two-digit integer.
+//
+// Guaranteed constraints:
+// 10 ≤ n ≤ 99.
+//
+// [output] integer
+//
+// The sum of the first and second digits of the input number.
+
+
+// Solution:
+
+function addTwoDigits(n) {
+
+
+    let num = n.toString();
+
+    let numArr = num.split('');
+
+    let sum;
+
+    for(let i = 0; i < numArr.length; i++){
+
+        if(i == 0){
+            sum = parseInt(numArr[i]) + parseInt(numArr[i + 1]);
+        }
+
+    }
+
+    return sum;
+
+}
 
